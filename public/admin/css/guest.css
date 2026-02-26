@@ -1,0 +1,189 @@
+/* Páginas de autenticação (login, recuperar senha, etc.) */
+.guest-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%);
+    padding: 1.5rem;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.guest-wrapper {
+    width: 100%;
+    max-width: 420px;
+}
+
+.guest-wrapper--wide {
+    max-width: 720px;
+}
+
+.guest-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    background: #fff;
+    overflow: hidden;
+}
+
+.guest-card .card-header {
+    padding: 1.75rem 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+    background: #fff;
+    display: block !important;
+    justify-content: unset !important;
+    flex-wrap: unset !important;
+}
+
+.guest-card .card-header .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111827;
+    text-decoration: none;
+    letter-spacing: -0.02em;
+}
+
+.guest-card .card-header .brand-icon-e {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: #2563eb;
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.guest-card .card-header .brand:hover {
+    color: #2563eb;
+}
+
+.guest-card .card-body {
+    padding: 1.75rem 1.5rem;
+}
+
+/* Bloco de introdução (título + subtítulo) — classes próprias para não conflitar com AdminLTE */
+.guest-card-intro {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.guest-card-intro .guest-intro-title,
+.guest-card-intro .guest-intro-subtitle {
+    display: block !important;
+    width: 100%;
+}
+
+.guest-card-intro .guest-intro-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827;
+    margin: 0 0 0.75rem 0;
+    padding: 0;
+    line-height: 1.3;
+}
+
+.guest-card-intro .guest-intro-subtitle {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin: 0 0 0 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+/* Input com ícone à esquerda */
+.guest-input-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.guest-input-group .form-control {
+    padding-left: 2.75rem;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    font-size: 0.9375rem;
+}
+
+.guest-input-group .form-control:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+    outline: none;
+}
+
+.guest-input-group .input-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+    font-size: 1rem;
+    pointer-events: none;
+}
+
+.guest-input-group:focus-within .input-icon {
+    color: #2563eb;
+}
+
+.guest-card .form-check-input {
+    width: 1.125rem;
+    height: 1.125rem;
+    margin-top: 0.125rem;
+    accent-color: #2563eb;
+}
+
+.guest-card .form-check-label {
+    font-size: 0.875rem;
+    color: #374151;
+}
+
+.guest-card .btn-primary {
+    height: 48px;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 8px;
+    background: #2563eb;
+    border: none;
+}
+
+.guest-card .btn-primary:hover {
+    background: #1d4ed8;
+}
+
+.guest-card .btn-link-forgot {
+    font-size: 0.875rem;
+    color: #6b7280;
+    text-decoration: none;
+}
+
+.guest-card .btn-link-forgot:hover {
+    color: #2563eb;
+}
+
+.guest-card .invalid-feedback {
+    font-size: 0.8125rem;
+    margin-top: 0.25rem;
+}
+
+.guest-card .alert-danger {
+    font-size: 0.875rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 480px) {
+    .guest-page {
+        padding: 1rem;
+    }
+    .guest-card .card-body,
+    .guest-card .card-header {
+        padding: 1.25rem;
+    }
+}
